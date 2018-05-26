@@ -1,0 +1,13 @@
+{
+  "name": "payetconsulting/infosirene-sdk",
+  "description": "PHP SDK for Info-Sirene.com",
+  "version": "1.0",
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "InfoSirene\\SDK\\": "sdk/"
+    }
+  }
+}
