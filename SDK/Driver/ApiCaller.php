@@ -73,7 +73,7 @@ class ApiCaller
             "user-token" => $this->secretKey
         );
 
-        $result   = $this->client->request($method, self::HOSTNAME.$endpoint, []);
+        $result   = $this->client->request($method, self::HOSTNAME.$endpoint, $postParameters);
         $status   = $result->getStatusCode();
         $response = $result->getBody();
 
