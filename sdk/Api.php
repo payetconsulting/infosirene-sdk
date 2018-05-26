@@ -73,7 +73,7 @@ class Api {
      * @return $this
      */
     public function addApe($ape) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'APE',
             'value' => $ape
         ];
@@ -86,7 +86,7 @@ class Api {
      * @return $this
      */
     public function addActivity($activity) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'ACTIVITY',
             'value' => $activity
         ];
@@ -99,7 +99,7 @@ class Api {
      * @return $this
      */
     public function addKeyword($keyword) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'KEYWORD',
             'value' => $keyword
         ];
@@ -112,7 +112,7 @@ class Api {
      * @return $this
      */
     public function addDenomination($denomination) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'DENOMINATION',
             'value' => $denomination
         ];
@@ -125,7 +125,7 @@ class Api {
      * @return $this
      */
     public function addDepartment($department) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'DEPT',
             'value' => $department
         ];
@@ -138,7 +138,7 @@ class Api {
      * @return $this
      */
     public function addPostalCode($postalCode) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'CP',
             'value' => $postalCode
         ];
@@ -151,7 +151,7 @@ class Api {
      * @return $this
      */
     public function addCty($city) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'CITY',
             'value' => $city
         ];
@@ -164,7 +164,7 @@ class Api {
      * @return $this
      */
     public function addTurnover($turnover) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'TURNOVER',
             'value' => $turnover
         ];
@@ -176,7 +176,7 @@ class Api {
      * @return $this
      */
     public function withPhone() {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'HASPHONE',
             'value' => 1
         ];
@@ -188,7 +188,7 @@ class Api {
      * @return $this
      */
     public function withEmail() {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'HASEMAIL',
             'value' => 1
         ];
@@ -201,7 +201,7 @@ class Api {
      * @return $this
      */
     public function setPage($page) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'PAGE',
             'value' => $page
         ];
@@ -214,7 +214,7 @@ class Api {
      * @return $this
      */
     public function setOrigin($origin) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'ORIGIN',
             'value' => $origin
         ];
@@ -227,7 +227,7 @@ class Api {
      * @return $this
      */
     public function forceOrder($order) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'FORCE_ORDER',
             'value' => $order
         ];
@@ -240,7 +240,7 @@ class Api {
      * @return $this
      */
     public function setQuantityPerPage($quantity) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'QUANTITYPERPAGE',
             'value' => $quantity
         ];
@@ -253,7 +253,7 @@ class Api {
      * @return $this
      */
     public function addEffective($effective) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'EFFECTIVE',
             'value' => $effective
         ];
@@ -266,7 +266,7 @@ class Api {
      * @return $this
      */
     public function setCreatedDateMin($createdDateMin) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'CREATED_DATE_MIN',
             'value' => $createdDateMin
         ];
@@ -279,7 +279,7 @@ class Api {
      * @return $this
      */
     public function setCreatedDateMax($createdDateMax) {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'CREATED_DATE_MAX',
             'value' => $createdDateMax
         ];
@@ -291,7 +291,7 @@ class Api {
      * @return $this
      */
     public function forceRandom() {
-        $this->key[] = [
+        $this->keys[] = [
             'field' => 'FORCE_RANDOM',
             'value' => 1
         ];
