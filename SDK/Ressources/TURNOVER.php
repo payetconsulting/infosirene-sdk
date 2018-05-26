@@ -4,7 +4,7 @@ namespace InfoSirene\SDK\Ressources;
 
 class TURNOVER {
 
-    const CA_49999 = 0;
+    const CA_499999 = 0;
 
     const CA_500000_TO_999999 = 1;
 
