@@ -49,12 +49,17 @@ class ApiCaller
         foreach($keys as $key => $info) {
             $field = $info['field'];
             $value = $info['value'];
-            
-            if(!array_key_exists($field,$parameters)) {
-                $parameters[$field] = [];
+
+            if(in_array($field, ['PAGE', 'QUANTITYPERPAGE'])) {
+                $parameters[$field] = $value;
             }
-            
-            $parameters[$field][] = $value;
+            else {
+                if(!array_key_exists($field,$parameters)) {
+                    $parameters[$field] = [];
+                }
+
+                $parameters[$field][] = $value;
+            }
         }
         
         return $parameters;
