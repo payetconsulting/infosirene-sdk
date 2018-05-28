@@ -1,8 +1,8 @@
 <?php
 
 namespace InfoSirene\SDK;
+
 use InfoSirene\SDK\Driver\ApiCaller;
-use InfoSirene\SDK\Driver\ApiDriver;
 use InfoSirene\SDK\Driver\Endpoint;
 
 /**
@@ -77,7 +77,7 @@ class Api {
             'field' => 'APE',
             'value' => $ape
         ];
-        
+
         return $this;
     }
 
